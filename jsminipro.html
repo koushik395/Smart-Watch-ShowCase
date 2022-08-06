@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d898a35d28.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            height: 100px;
+            background-color: rgb(5, 35, 69);
+        }
+        nav{
+            position: relative;
+            text-align: center;
+        }
+        nav > img{
+            margin-top: 20px;
+            width: 150px;
+            height: 70px;
+        }
+        #section1{
+            display: flex;
+        }
+        #watch-wrapper{
+            width: 40%;
+            height: 83vh;
+            position: relative;
+        }
+        #watch-wrapper> img{
+            width: 500px;
+            position: absolute;
+            left: 100px;
+        }
+        #info-wrapper>h1{
+            color: white;
+            font-size: 35px;
+            letter-spacing: 5px;
+            position: absolute;
+            top: 56%;
+            left: 63%;
+        }
+        #info2Wrapper{
+            position: absolute;
+            top:45%;
+            left: 57%;
+            color: white;
+            font-size:30px;
+        }
+        #heart-pulse{
+            position: absolute;
+            top:42%;
+            left: 62%;
+            font-size: 50px;
+            color: red;
+            animation-name: heart-pulse1;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+        }
+        #details-wrapper{
+            position: relative;
+            width:45%;
+        }
+        #details-wrapper>h1{
+            margin-top: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        #details-wrapper > p{
+            margin-top: 20px;
+        }
+        h3{
+            margin-top: 20px;
+            font-size: 24px;
+            Font-Family: 'Poppins', sans-serif;
+            Color: #8b8b99;
+        }
+        .colors{
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-right: 15px;
+            width: 60px;
+            height: 50px;
+            background-color: aqua;
+        }
+        #red{
+            background-color: red;
+        }
+        #black{
+            background-color: black;
+        }
+        #blue{
+            background-color: rgb(126, 126, 249);
+        }
+        #pink{
+            background-color: pink;
+        }
+        #purple{
+            background-color: rgb(146, 74, 146);
+        }
+        .features{
+            color: rgb(6, 6, 6);
+            font-weight: 600 ;
+            border-radius: 7px;
+            margin-top: 15px;
+            margin-right: 16px;
+            border: none;
+            background-color: #d4d4d6;
+            padding: 10px;
+            width: 90px;
+        }
+        #buynow{
+            margin-top: 20px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            background-color: orange;
+            padding:10px;
+            width: 120px;
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        @keyframes heart-pulse1{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        @media (max-width:500px){
+            header{
+                height: 100px;
+                width: 100vw;
+                background-color: rgb(5, 35, 69);
+            }
+            nav{
+                width: 100%;
+                position: relative;
+                text-align: center;
+            }
+            nav > img{
+                width: 150px;
+                height: 70px;
+            }
+            #section1{
+                display: flex;
+                flex-direction: column;
+            }
+            #watch-wrapper{
+                position: relative;
+                width: 100vw;
+                height: 83vh;
+                background-color: #8b8b99;
+            }
+            #watch-wrapper> img{
+                width: 500px;
+                position: absolute;
+                top:30px;
+                left: 30px;
+                max-width: 350px;
+                max-height: 400px;
+            }
+            #details-wrapper{
+                position: relative;
+                width:45%;
+            }
+            #info2Wrapper{
+            position: absolute;
+            top:33%;
+            left: 38%;
+            color: white;
+            font-size:20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="js images\amazon_logo.png" alt="amazon">
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <div id="watch-wrapper">
+                    <img src="js images\purple band.png" alt="watch">
+                    <div id="info-wrapper" class="hide">
+                        <i id="heart-pulse" class="fa-solid fa-heart-pulse"></i>
+                        <h1>78</h1>
+                    </div>
+                    <div id="info2Wrapper" class="show">
+                        <p>FitBit</p>
+                    </div>
+            </div>
+            <div id="details-wrapper">
+                <h1>FitBit19-The Smartest Watch</h1>
+                <p>
+                    Make healthy a habit with FitBit19 and a free 1-year FitBit Premium trial for new Premium users. This slim, easy-to-use fitness tracker packs 24/7 heart rate, Active Zone Minutes, 10 days of battery and more—and paired with step-by-step fitness & nutrition programs, personalized insights, and sleep tools from Premium, you have all you need for a healthier you.
+                </p>
+                <h3>Select Color</h3>
+                <div id="color-wrapper">
+                    <button class="colors" id="red"></button>
+                    <button class="colors" id="black"></button>
+                    <button class="colors" id="blue"></button>
+                    <button class="colors" id="pink"></button>
+                    <button class="colors" id="purple"></button>
+                </div>
+                <div id="features-wrapper">
+                    <h3>Features</h3>
+                    <button class="features">Time</button> 
+                    <button class="features">Heart Rate</button><br> 
+                    <button id="buynow">BUY NOW</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="jsminipro.js"></script>
+</body>
+</html>
